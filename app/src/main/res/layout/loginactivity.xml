@@ -1,39 +1,9 @@
-import android.widget.Button;
-    import android.widget.EditText;
-    import android.widget.TextView;
-
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="jan.pitt.si.Login">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Roommate Finder"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        android:textColor="@color/colorPrimary"
-        android:textSize="@android:dimen/notification_large_icon_height"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="97dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="168dp"
-        android:layout_height="38dp"
-        android:text="Welcome to: "
-        android:fontFamily="sans-serif-smallcaps"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="38dp"
-        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:layout_width="372dp"
@@ -43,22 +13,41 @@ import android.widget.Button;
         tools:layout_editor_absoluteY="538dp"
         tools:ignore="MissingConstraints">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Welcome to: "
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="38dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Roommate Finder"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@android:dimen/notification_large_icon_height"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="97dp" />
+
+        <Button
+            android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="bottom"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent" />
+            android:onClick="@LoginActivity"
+            android:text="@string/enter"
+            tools:layout_editor_absoluteX="136dp"
+            tools:layout_editor_absoluteY="287dp" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="@LoginActivity"
-        android:text="@string/enter"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="287dp" />
 
 </android.support.constraint.ConstraintLayout>
 
