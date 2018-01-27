@@ -3,6 +3,7 @@ package jan.pitt.si;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -43,19 +44,28 @@ public class ProfileViewerActivity extends AppCompatActivity {
             u.setMessy(scanner.nextInt());
             scanner.nextLine();
 
+            String bio = "Bio: " + scanner.nextLine();
+
             String s = scanner.nextLine();
-            while(s.charAt(0) == '$') {
+            while(s.length() >= 1 && s.charAt(0) == '$') {
                 u.setInterest(Attributes.attribute(s));
-                s = scanner.nextLine();
+                if(scanner.hasNextLine()) s = scanner.nextLine();
+                else break;
             }
+            u.setBio(bio);
+
+            list.add(u);
         }
+
     }
 
     protected void displayUser(User u) {
         TextView nameView = findViewById(R.id.name_tv);
         nameView.setText(u.name);
+        ArrayList<String> attr = new ArrayList<>(u.interests);
+        attr.add(u.bio);
         ArrayAdapter<String> adapter =
-                new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, u.interests);
+                new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, attr);
         ListView lv = findViewById(R.id.user_attr_list);
         lv.setAdapter(adapter);
         potential = u;
@@ -72,7 +82,7 @@ public class ProfileViewerActivity extends AppCompatActivity {
         }
 
         if (list.size() >= 1)
-            displayUser(list.remove(1));
+            displayUser(list.remove(0));
 
 
     }

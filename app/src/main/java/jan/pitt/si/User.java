@@ -21,6 +21,7 @@ public class User implements Serializable {
     protected int bedtime; //range from 0-23  (modular arithmetic)
     protected boolean onCampus;
     protected String imageAddress;
+    protected String bio;
 
 
     /* other fields for later can include personality traits, attributes like studious/athletic/
@@ -30,6 +31,7 @@ public class User implements Serializable {
     {
         email = e;
         password = pass;
+        interests = new ArrayList<>();
     }
     public void setName(String s) {
         name = s;
@@ -73,6 +75,9 @@ public class User implements Serializable {
     public void setGradYear (int year)
     {
         gradyear = year;
+    }
+    public void setBio (String s) {
+        bio = s;
     }
 }
  enum Gender implements Serializable

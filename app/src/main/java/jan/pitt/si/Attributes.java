@@ -13,6 +13,10 @@ public class Attributes {
     static String stud = "Studious";
     //range from 1-4
     static String mess = "Messy";
+    static String pets = "Pet owner";
+    static String dogs = "Dog lover";
+    static String trav = "World traveller";
+    static String tidy = "Tidy";
 
     public static String attribute(String s) {
         switch (s) {
@@ -28,6 +32,14 @@ public class Attributes {
                 return quiet;
             case "$stud":
                 return stud;
+            case "$pets":
+                return pets;
+            case "$dogs":
+                return dogs;
+            case "$trav":
+                return trav;
+            case "$tidy":
+                return tidy;
         }
 
         return null;
