@@ -10,6 +10,7 @@ import java.util.ArrayList;
 public class User extends Object implements Serializable {
     protected String email;
     protected String password;
+    protected String name;
     protected int gradyear; //expand to include upperclassmen later
     protected Gender gender;
     protected String profile;
@@ -29,6 +30,9 @@ public class User extends Object implements Serializable {
     {
         email = e;
         password = pass;
+    }
+    public void setName(String s) {
+        name = s;
     }
     public void setGender (Gender g)
     {
