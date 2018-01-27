@@ -7,7 +7,10 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements {
+
+
+    private ArrayList<User> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void makeUserList(ArrayList<User> list) {
+        this.list = list;
         Scanner scanner = new Scanner(getResources().openRawResource(R.raw.other_users));
 
         while (scanner.hasNextLine()) {

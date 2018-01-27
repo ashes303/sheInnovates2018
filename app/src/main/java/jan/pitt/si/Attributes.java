@@ -5,32 +5,13 @@ package jan.pitt.si;
  */
 
 public class Attributes {
-    static String earl = "Early Riser";
-    static String late = "Late to bed";
-    static String athl = "Athletic";
-    static String loud = "Loud";
-    static String quiet = "Prefers Silence";
-    static String stud = "Studious";
-    static String mess = "Messy";
+    String earl = "Early Riser";
+    String late = "Late to bed";
+    String athl = "Athletic";
+    String loud = "Loud";
+    String quiet = "Prefers Silence";
+    String stud = "Studious";
+    //range from 1-4
+    String mess = "Messy";
 
-
-    public static String attribute(String s) {
-        switch (s) {
-            case "$earl":
-                return earl;
-            case "$late":
-                return late;
-            case "$athl":
-                return athl;
-            case "$loud":
-                return loud;
-            case "$quiet":
-                return quiet;
-            case "$stud":
-                return stud;
-            case "$mess":
-                return mess;
-        }
-        return null;
-    }
 }
