@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * Created by erino on 1/26/2018.
  */
 
-public class User extends Object implements Serializable {
+public class User implements Serializable {
     protected String email;
     protected String password;
     protected String name;

@@ -1,3 +1,7 @@
+import android.widget.Button;
+    import android.widget.EditText;
+    import android.widget.TextView;
+
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -15,9 +19,9 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="@color/colorPrimary"
         android:textSize="@android:dimen/notification_large_icon_height"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="76dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="97dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -44,23 +48,17 @@
             android:layout_height="wrap_content"
             android:gravity="bottom"
             android:orientation="horizontal"
-            tools:ignore="UselessParent">
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="54dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/sign_up" />
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="64dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/login" />
-        </LinearLayout>
+            tools:ignore="UselessParent" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@LoginActivity"
+        android:text="@string/enter"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="287dp" />
 
 </android.support.constraint.ConstraintLayout>
 

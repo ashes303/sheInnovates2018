@@ -11,6 +11,7 @@ public class Attributes {
     String loud = "Loud";
     String quiet = "Prefers Silence";
     String stud = "Studious";
+    //range from 1-4
     String mess = "Messy";
-    
+
 }
