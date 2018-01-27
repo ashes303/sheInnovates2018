@@ -23,7 +23,7 @@
         android:id="@+id/textView2"
         android:layout_width="168dp"
         android:layout_height="38dp"
-        android:String="Welcome to: "
+        android:text="Welcome to: "
         android:fontFamily="sans-serif-smallcaps"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"

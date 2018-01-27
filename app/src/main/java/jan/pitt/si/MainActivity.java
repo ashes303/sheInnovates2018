@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void makeUserList(ArrayList<User> list) {
-        Scanner scanner = new Scanner(getResources().openRawResource(R.raw.otherUsers));
+        Scanner scanner = new Scanner(getResources().openRawResource(R.raw.other_users));
 
         while (scanner.hasNextLine()) {
             User u = new User(scanner.nextLine(), scanner.nextLine());
