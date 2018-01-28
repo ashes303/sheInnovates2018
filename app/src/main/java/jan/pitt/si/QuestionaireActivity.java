@@ -17,7 +17,7 @@ public class QuestionaireActivity extends AppCompatActivity {
         goButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), ProfileViewerActivity.class));
+                startActivity(new Intent(getApplicationContext(), StarsActivity.class));
             }
         });
     }

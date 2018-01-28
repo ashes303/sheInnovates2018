@@ -33,7 +33,8 @@
             android:name=".Login"
             android:label="@string/login"></activity>
         -->
-        <activity android:name=".QuestionaireActivity"></activity>
+        <activity android:name=".QuestionaireActivity" />
+        <activity android:name=".StarsActivity"></activity>
     </application>
 
 </manifest>

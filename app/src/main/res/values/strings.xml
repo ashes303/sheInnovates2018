@@ -119,6 +119,7 @@
     <string name="eleven_one">11:00-1:00</string>
     <string name="after_one">After 1:00</string>
     <string name="tell_us">Tell us about yourself...</string>
+    <string name="trait">trait</string>
     <string-array name="years">
         <item>2018</item>
         <item>2019</item>
@@ -135,6 +136,6 @@
         <item>Male</item>
         <item>Any</item>
     </string-array>
-    
-    
+
+
 </resources>
