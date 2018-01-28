@@ -16,7 +16,7 @@ public class StarsActivity extends AppCompatActivity {
             "Quiet",
             "an Early Riser",
             "involved in Sports",
-            "Smart"
+            "Studious"
 
     };
     int i = 0;
@@ -29,7 +29,7 @@ public class StarsActivity extends AppCompatActivity {
         TextView tv = findViewById(R.id.trait);
         tv.setText(traits[i++]);
 
-        ImageButton nextPreference = (ImageButton) findViewById(R.id.nextButton);
+        ImageButton nextPreference = findViewById(R.id.nextButton);
         nextPreference.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
