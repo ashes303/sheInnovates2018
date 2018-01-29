@@ -10,7 +10,7 @@ When users first log in to the app, they fill out a questionnaire about themselv
 
 <img src="https://github.com/ashes303/sheInnovates2018/blob/master/Questionaire.png" width="500">
 Onboarding, profile creation.
-<img src="https://github.com/ashes303/sheInnovates2018/blob/master/Survey.png" width="500">
+<img src="https://github.com/ashes303/sheInnovates2018/blob/master/Survey.png" width="400">
 Users indicate their preferences in a roommate.
 <img src="https://github.com/ashes303/sheInnovates2018/blob/master/Viewing%20Profile.png" width="500">
 Users view other profiles to find a potential match.
