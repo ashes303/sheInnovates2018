@@ -9,6 +9,6 @@ We've heard lots horror stories about bad roommates-- we want to end these horro
 When users first log in to the app, they fill out a questionnaire about themselves and about what they are seeking in a roommate. It then presents them with profiles that fit their criteria. Users then can check yes or no, and if both click yes, they're a match. Matches can then exchange contact information.
 
 ![Onboarding Profile Creation](https://github.com/ashes303/sheInnovates2018/blob/master/Questionaire.png)
-<src="https://github.com/ashes303/sheInnovates2018/blob/master/Questionaire.png" width="150">
+<img src="https://github.com/ashes303/sheInnovates2018/blob/master/Questionaire.png" width="150">
 ![Users indicate their preferences in a roommate](https://github.com/ashes303/sheInnovates2018/blob/master/Survey.png)
 ![Users view other profiles to find potential matches](https://github.com/ashes303/sheInnovates2018/blob/master/Viewing%20Profile.png)
